@@ -69,13 +69,30 @@
    p{
     line-height:3;
    }
+
+   .Button{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+   .lang-section{
+    display: none;
+   }
+
+   .active{
+    display: block;
+   }
+
    
   </Style>
  </head>
   <body>
     <h1>Seven Star Pro</h1>
-    <div class = "Button">
-    <button id = "en-btn" >English</button>
+   <div class = "Button">
+   <button id = "en-btn" >English</button>
    <button id = "jp-btn">日本語</button>
    <button id = "ch_simplify-btn">简体中文</button>  
    <button id = "ch_traditional-btn">繁體中文</button>  
