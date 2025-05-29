@@ -5,7 +5,7 @@ function showLanguage(lang){
   languages.forEach(id => {
      const section = document.getElementById(id);
     if (section) {
-      section.classList.remove('active')
+      section.classList.remove('active');
       section.style.display = 'none';
     }
   });
