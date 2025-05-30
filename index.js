@@ -1,4 +1,4 @@
-//translate 
+
 function showLanguage(lang){
   
  const languages = ['en','jp','ch_simplify','ch_traditional','fr','it','es','es_latino'];
@@ -17,7 +17,6 @@ function showLanguage(lang){
   }
 }
 
-//button 
 document.addEventListener('DOMContentLoaded',() => {
 
   document.getElementById('en-btn').addEventListener('click', () => showLanguage('en'));
