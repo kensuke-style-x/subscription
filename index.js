@@ -19,6 +19,35 @@ function showLanguage(lang){
 
 document.addEventListener('DOMContentLoaded',() => {
 
+  const languageMap = {
+    'en': 'en',
+    'en-US':'en',
+    'ja': 'jp',
+    'ja-JP':'jp',
+    'zh': 'ch_simplify',
+    'zh-CN': 'ch_simplify',
+    'zh-TW': 'ch_traditional',
+    'fr': 'fr',
+    'fr-FR': 'fr',
+    'it':'it',
+    'it-IT': 'it',
+    'es':'es',
+    'es-ES':'es',
+    'es-419': 'es_latino',
+    'es-MX': 'es_latino',
+    'es-AR': 'es_latino',
+    'es-CL': 'es_latino'
+  };
+
+  const userLang = navigator.language || navigator.userLanguage;
+  const languageID = languageMap[userLang] || 'en';
+
+  showLanguage(languageID);
+
+  
+
+document.addEventListener('DOMContentLoaded',() => {
+
   document.getElementById('en-btn').addEventListener('click', () => showLanguage('en'));
   document.getElementById('jp-btn').addEventListener('click', () => showLanguage('jp'));
   document.getElementById('ch_simplify-btn').addEventListener('click', () => showLanguage('ch_simplify'));
